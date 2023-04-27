@@ -1,0 +1,24 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: bisque;
+  font-size: 17px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(224, 205, 179);
+}
+header img {
+  max-width: 100%;
+  height: auto;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
