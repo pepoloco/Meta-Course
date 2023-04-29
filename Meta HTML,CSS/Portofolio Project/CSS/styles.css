@@ -1,24 +1,166 @@
 body {
+  background-image: url(https://images.unsplash.com/photo-1617801003287-1a71d7792fdc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-family: "Times New Roman", Times, serif;
-  background-color: bisque;
   font-size: 17px;
 }
-header {
+/* LOGO */
+.logoHeader {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.79;
+}
+.logoContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+#pictureLogo {
+  height: 120px;
+  width: 350px;
+}
+.containerCosmetic{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  background-color: rgb(224, 205, 179);
+  border: 2px hidden rgb(0, 0, 0);
+  background-color: rgba(248, 248, 240, 0.212);
+  margin: 10px;
 }
-header img {
-  max-width: 100%;
-  height: auto;
+.cosmetic{
+  color: rgba(10, 10, 10, 0.973);
 }
-.footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  padding: 10px;
-  font-size: 10px;
+/* NAVS */
+.navs {
+    clear: both;
+    margin: 0vw 3vw;
+    padding: 0.75vw 0.75vw;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.navs ul{
+    background-color: rgba(141, 138, 138, 0.192);
+    width: 100vw;
+    text-align: center;
+    list-style: none;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 150%;
+    border: 1px rgb(36, 35, 36) solid;
+  
+}
+.navs a{
+  text-decoration: none;
+  color: rgb(10, 10, 10, 0.973);
+  font-size: 1.3rem;
   font-weight: bold;
 }
+.navs a:hover{
+  color: gray;
+}
+/* ABOUT US */
+.AboutUs{
+  display: flex;
+  justify-content: center;
+  color: rgb(10, 10, 10, 0.973);
+}
+.paragraphAboutUs{
+  border: 1px rgb(10, 10, 10, 0.973) hidden;
+  border-radius: 5px;
+  background-color: rgba(141, 138, 138, 0.089);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#paragraphsAbout{
+  color: rgb(10, 10, 10, 0.973);
+  font-size: large;
+}
+/* SERVICES */
+.serviceHeader{
+    display: flex;
+  justify-content: center;
+  color: rgb(10, 10, 10, 0.973);
+}
+.services{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+}
+.service img{
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.service {
+  position: relative;
+  overflow: hidden;
+}
+.service p{
+  text-align: center;
+  border: 1px rgb(10, 10, 10, 0.973) hidden;
+  background-color: rgba(141, 138, 138, 0.089);
+}
+/* PRICES */
+.priceHeader{
+  display: flex;
+  justify-content: center;
+}
+.tablePrice{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+thead {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+  border: 0.5px  rgb(10, 10, 10, 0.973) hidden;
+}
+
+th {
+  background-color: rgba(141, 138, 138, 0.089);
+  font-weight: bold;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer{
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-top: 50px;
+}
+
+/*EFFECTS*/
+.service img:hover{
+  transform: scale(1.1);
+  
+}.service:hover img{
+  opacity: 1;
+}
+
+nav a[href="#services"]:active {
+  animation: teleport 1s;
+}
+
